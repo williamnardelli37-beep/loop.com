@@ -1,0 +1,139 @@
+body {
+  background-image: url('./imagem/1.png'); /* Caminho para a imagem */
+  /* Outras propriedades para ajustar o fundo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-size: cover;       /* Faz a imagem cobrir toda a tela */
+  background-attachment: fixed; /* Mantém a imagem fixa enquanto a página rola */
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+
+/* Estilos e Animação para a Imagem */
+/* Define a animação de aparecimento suave (fade-in) */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+
+img:hover{
+
+   box-shadow: -8px 21px 138px 44px rgb(255, 255, 255);
+}
+img {
+    transition: box-shadow 0.3s ease-out;
+   border-radius: 30px;
+    display: block; 
+    margin: 0 auto;
+    
+    /* 2. Efeito de Aparecimento Automático (Fade-in) */
+    opacity: 0; /* Começa invisível */
+    animation-name: fadeIn;
+    animation-duration: 2s; /* O efeito dura 2 segundos */
+    animation-delay: 0.5s; /* Espera 0.5 segundo para começar */
+    animation-fill-mode: forwards; /* Mantém a imagem visível no final */
+    
+    /* Nota: A propriedade border-radius: 30px; foi removida.
+       Se você quiser os cantos arredondados, adicione-a de volta. */
+}
+
+/* Estado de Interação: Aciona a visibilidade */
+img:hover {
+    opacity: 1; /* Torna a imagem visível em 2 segundos */
+}
+div{
+    text-align: center;
+    font-size: large;
+}
+p{
+    text-align: right;
+    font-size: large;
+    
+}
+
+a {
+    font-size: 35px;
+    color: aliceblue;
+    transform: scale(1.5);
+    /* Transforma o link em bloco */
+    display: block; 
+    /* Aumente a largura para acomodar o texto. Ajuste este valor! */
+    width: 600px; 
+    /* Centraliza o TEXTO DENTRO do link (opcional, mas recomendado) */
+    text-align: center;
+    /* Centraliza o BLOCO do link */
+    margin: 0 auto; 
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    
+}
+mark{
+background-color: rgb(255, 255, 255);
+font-size: 35px;
+}
+h2{
+    font-size: 29px;
+   text-align: center;
+}
+h3{
+    font-size: 29px;
+    text-align: center;
+
+}
+/* 1. Define a animação de aparecimento suave (fade-in) */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+/* 2. Estilos e Animação para o Texto (classe .tt) */
+.tt {
+    /* Estilos originais do texto */
+    color: aliceblue; 
+    font-size: 150px;
+    
+    /* Aplicação do Efeito de Aparecimento Automático (Fade-in) */
+    opacity: 0; /* Começa invisível */
+    animation-name: fadeIn;
+    animation-duration: 2s; /* Duração do efeito (2 segundos) */
+    animation-delay: 0.5s; /* Atraso para começar (0.5 segundo) */
+    animation-fill-mode: forwards; /* Mantém o texto visível no final */
+}
+/* 1. Define a animação de aparecimento suave (fade-in) */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+/* 2. Estilo e Animação para o Divisor Horizontal */
+hr {
+    /* Base e Estilização */
+    border: none; /* Remove a borda padrão */
+    height: 5px; /* Espessura da linha */
+    background-color: #ffffff; /* Cor principal (Azul) */
+    width: 70%; /* Largura da linha (60% do contêiner) */
+    margin: 30px auto; /* Centraliza e adiciona espaço vertical */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+
+    /* Efeito de Aparecimento Automático (Fade-in) */
+    opacity: 0; /* Começa invisível */
+    animation-name: fadeIn;
+    animation-duration: 1.5s; /* Duração do efeito (1.5 segundos) */
+    animation-delay: 1s; /* Atraso de 1 segundo para começar */
+    animation-fill-mode: forwards; /* Mantém visível após a animação */
+}
