@@ -136,5 +136,4 @@ hr {
     animation-duration: 1.5s; /* Duração do efeito (1.5 segundos) */
     animation-delay: 1s; /* Atraso de 1 segundo para começar */
     animation-fill-mode: forwards; /* Mantém visível após a animação */
-
 }
